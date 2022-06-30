@@ -24,6 +24,10 @@ a:hover{
     opacity: 0.5;
 }
 
+p{
+    font-size: 20px;
+}
+
 .heading {
     position: absolute;
     width: 100%;
@@ -49,12 +53,10 @@ a:hover{
     background-position: center;
     height: 100vh; 
     overflow: hidden;
-
-
 }
 
 #dot{
-    color: rgba(0, 255, 47, 0.703);
+    color: rgba(255, 255, 255, 0.384);
 }
 
 @keyframes blink {
