@@ -14,14 +14,12 @@ body{
     font-family: "Dina", "tahoma"; 
 }
 
-a {
-    text-decoration: none;
-    color: white;
-}
-
-a:hover{
-    text-decoration: underline;
-    opacity: 0.5;
+.bottom{
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    font-size: 13px;
 }
 
 p{
@@ -72,4 +70,15 @@ p{
     animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.646);
+}
+
+a:hover{
+    text-decoration: underline;
+    opacity: 0.5;
+
 }
