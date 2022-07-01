@@ -69,7 +69,7 @@ particlesJS('particles-js',
       },
       "move": {
         "enable": true,
-        "speed": 0.5,
+        "speed": 1,
         "direction": "top-right",
         "random": false,
         "straight": false,
@@ -98,7 +98,7 @@ particlesJS('particles-js',
         "grab": {
           "distance": 200,
           "line_linked": {
-            "opacity": 0.8
+            "opacity": 1
           }
         },
         "bubble": {
