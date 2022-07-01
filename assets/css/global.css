@@ -3,6 +3,11 @@
     src: url("/assets/fonts/dina10px.ttf");
 }
 
+@keyframes fadein {
+    from { opacity: 0}
+    to   { opacity: 1}
+  }
+
 body{
 
     -webkit-touch-callout: none; /* iOS Safari */
@@ -11,7 +16,7 @@ body{
        -moz-user-select: none; /* Old versions of Firefox */
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; 
-
+            animation: fadein 2s;
     margin: 0;
     background: url(/assets/img/blackmarket.webp);
     background-size: cover;
@@ -78,6 +83,14 @@ details {
     font-size: 13px;
 }
 
+#ns{
+    position: fixed;
+    top: 3%;
+    text-align: center;
+    width: 100%;
+    font-size: 13px;
+}
+
 .button:hover{
     text-decoration: underline;
 }
@@ -139,6 +152,8 @@ p{
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
+
+
 
 audio{
     display:none;
