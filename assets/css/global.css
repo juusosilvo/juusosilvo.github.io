@@ -4,6 +4,14 @@
 }
 
 body{
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; 
+
     margin: 0;
     background: url(/assets/img/blackmarket.webp);
     background-size: cover;
@@ -47,7 +55,6 @@ details {
     transition: .25s transform ease;
   }
   
-  /* THE MAGIC 🧙‍♀️ */
   details[open] > summary:before {
     transform: rotate(90deg);
   }
@@ -63,9 +70,22 @@ details {
   }
   
 
-#bottom{
+#top{
     position: fixed;
     top: 0;
+    text-align: center;
+    width: 100%;
+    font-size: 13px;
+}
+
+.button:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#bottom{
+    position: fixed;
+    bottom: 0;
     text-align: center;
     width: 100%;
     font-size: 13px;
@@ -121,9 +141,14 @@ p{
     animation-timing-function: linear;
 }
 
+audio{
+    display:none;
+    visibility: hidden;
+}
+
 a {
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.646);
+    color: rgb(255, 255, 255);
 }
 
 a:hover{

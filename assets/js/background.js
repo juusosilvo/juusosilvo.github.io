@@ -6,7 +6,10 @@ function random_background(){
         './assets/img/city.webp',
         './assets/img/cafe.gif',
         './assets/img/cat.gif',
-        './assets/img/jungle.gif'
+        './assets/img/jungle.gif',
+        './assets/img/mario.gif',
+        './assets/img/raining.gif',
+        './assets/img/sakura.gif'
     ];
 
     var background = backgrounds[Math.floor(Math.random() * backgrounds.length)];
