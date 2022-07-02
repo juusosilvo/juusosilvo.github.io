@@ -9,7 +9,13 @@ function random_background(){
         './assets/img/jungle.gif',
         './assets/img/mario.gif',
         './assets/img/raining.gif',
-        './assets/img/sakura.gif'
+        './assets/img/powergrid.gif',
+        './assets/img/coffee.gif',
+        './assets/img/lounge.gif',
+        './assets/img/takeout.gif',
+        './assets/img/sheep.gif',
+        './assets/img/train.gif',
+        './assets/img/cyberpunk.gif',
     ];
 
     var background = backgrounds[Math.floor(Math.random() * backgrounds.length)];
