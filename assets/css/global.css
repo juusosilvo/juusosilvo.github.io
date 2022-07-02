@@ -185,12 +185,33 @@ a:hover{
     margin: 0px;
 }
 
+#mobile{
+    display:none;
+    visibility: hidden;
+}
+
 @media screen and (max-width: 600px) {
     .heading h1 {
       font-size: 30px;
     }
     details{
-        display:none;
+        width: 390px;
+    }
+    #particles-js{
+        background-color: rgba(0, 0, 0, 0.550);
+    }
+    #bottom{
+        font-size: 10px;
+    }
+    #desktop{
+        display: none;
         visibility: hidden;
+    }
+    #email{
+        font-size: 15px;
+    }
+    #mobile{
+        display:contents;
+        visibility: visible;
     }
 }
