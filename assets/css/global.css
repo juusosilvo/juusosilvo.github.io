@@ -19,7 +19,6 @@ body{
     user-select: none; 
     animation: fadein 2s;
     margin: 0;
-    background: url(/assets/img/blackmarket.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
