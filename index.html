@@ -7,16 +7,21 @@
         <meta name="description" content="Computer & electronics hobbyist">
         <meta name="keywords" content="programming, coding, electronics, c, cpp, it, itsupport, helpdesk, linux, sysadmin, webdev, webdeveloper, developer, engineer, forhire, freelancer">
         <meta name="author" content="Juuso">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./assets/css/global.css">
-        <link rel="shortcut icon" href="./assets/img/favicon.png" >
         <link rel="icon" href="./assets/img/favicon2.png" type="image/png" >
         <title>Juuso | Computer & electronics hobbyist</title>
     </head>
 <body onload="random_background();">
     <div id="particles-js">
 
-        <span id="top" class="button" onclick="random_background();">&#10024; change background &#10024;</span>
+        <div id="top">
+            <span class="button" onclick="random_background();">&#10024; change background</span>
+            <span class="button" onclick="unmute();;">&#128266; play music</span>
+            <span class="button" onclick="mute();;">&#128263; stop music</span>
+        </div>
+
+        <span id="playing"></span>
         <noscript id="ns">&#10071;javascript seems to be off, random backgrounds and particles disabled&#10071;</noscript>
 
         <div class="heading">
@@ -34,11 +39,11 @@
             <details> 
                 <summary>Knowledge base</summary>
                     <div class="aligned-list">
-                        <ul>
+                         <ul>
                     Intermediate low-level programming skills with C and C++ (mainly C++)   <br>
-                    Familiar with Arduino and other microcontrollers                         <br>
+                    Familiar with Arduino and other microcontrollers                        <br>
                     Surface level reverse engineering knowledge                             <br>
-                    Comfortable with basic front-end web development                      <br>
+                    Comfortable with basic front-end web development                        <br>
                     Some experience with databases (SQL and Mongo)                          <br>
                     Networking enthusiast                                                   <br>
                     Good understanding of Linux (i use Arch as my daily driver) and CLIs    <br>
@@ -46,14 +51,16 @@
                     Comfortable with Nginx and Apache, little knowledge of Caddy            <br>
                     Comfortable with maintaining a Linux server, experience with iptables, ufw and selinux<br>
                     Always up-to-date with security vulnerabilities<br>
-                    </ul>
+                        </ul>
                     </div>
                     
             </details>
         </div>
         <span id="bottom">site made by <b>juuso</b>, hosted by <a target="_blank" href="https://juusosilvo.github.io">GitHub,</a> and powered by <a target="_blank" href="https://vincentgarreau.com/particles.js/">particles.js</a></span>
-
     </div>
+
+    <script src="./assets/js/audio-volume.js"></script>
+    <audio id="music" loop src="./assets/audio/human-music.mp3" onloadeddata="mute();"></audio>
 
     <script src="./assets/js/background.js"></script>
     <script src="./assets/particles/particles.js"></script>
