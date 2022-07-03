@@ -3,15 +3,17 @@
 <!DOCTYPE html>
 <html>
     <head>
+
         <meta charset="UTF-8">
         <meta property="og:url"                content="https://www.juuso.computer/" />
         <meta property="og:type"               content="Homepage" />
         <meta property="og:title"              content="ジュース" />
         <meta property="og:description"        content="Computer & electronics hobbyist from Finland" />
         <meta property="og:image"              content="./assets/img/favicon2.png" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./assets/css/global.css">
-        <link rel="icon" href="./assets/img/favicon2.png" type="image/png" >
+        <meta name="viewport"                  content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"                 href="./assets/css/global.css">
+        <link rel="icon"                       href="./assets/img/favicon2.png" type="image/png" >
+
         <title>ジュース</title>
     </head>
 <body onload="random_background();">
@@ -19,11 +21,11 @@
 
         <div id="top">
             <span class="button" onclick="random_background();">&#10024; change background</span>
-            <span class="button" onclick="unmute();;">&#128266; play music</span>
-            <span class="button" onclick="mute();;">&#128263; stop music</span>
+            <span class="button" onclick="play_music();">&#9654; play music</span>
+            <span class="button" onclick="pause_music();">&#9208; pause music</span>
+            <span class="button" onclick="restart_music();">&#9664; restart music</span>
         </div>
 
-        <span id="playing"></span>
         <noscript id="ns">&#10071;javascript seems to be off, random backgrounds and particles disabled&#10071;</noscript>
 
         <div class="heading">
@@ -31,13 +33,14 @@
                 root@juuso<span id="dot">.</span>computer:~$<span id="blink">|</span>
             </h1>
 
-            <span id="email">&#128233; email: <a href="mailto:juuso@airmail.cc"><strong>juuso@airmail.cc</strong></a></span>
-            <span id="email">&#128038; twitter: <a href="https://twitter.com/juuso1337"><strong>@juuso1337</strong></a></span>
+            <span id="links">
+            &#128233; email: <a href="mailto:juuso@airmail.cc"><strong>juuso@airmail.cc</strong></a>
+            &#128038; twitter: <a target="_blank" href="https://twitter.com/juuso1337"><strong>@juuso1337</strong></a>
+            </span>
 
-        
             <p>
                 Hey!&#128075; I'm <b>Juuso</b>, a 19 year old computer & electronics hobbyist from Finland.<br>
-                <small>I also <i>looove</i> video games! &#127918;&#128377;&#65039;</small>
+                Looking for gigs, feel free to email me or message me on Twitter!
             </p>
 
             <details> 
@@ -73,7 +76,7 @@
     </div>
 
     <script src="./assets/js/audio-volume.js"></script>
-    <audio id="music" loop src="./assets/audio/human-music.mp3" onloadeddata="mute();"></audio>
+    <audio id="music" loop src="./assets/audio/jazz.mp3" onloadeddata="pause_music();"></audio>
 
     <script src="./assets/js/background.js"></script>
     <script src="./assets/particles/particles.js"></script>

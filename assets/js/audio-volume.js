@@ -1,12 +1,23 @@
-function mute() {
-    var audio = document.getElementById("music");
-    audio.volume = 0.0; 
-    document.getElementById("playing").textContent = "";
+let audio;
+
+function pause_music() {
+
+    audio = document.getElementById("music");
+    audio.pause(); 
+    
 }
 
-function unmute(){
-    var audio = document.getElementById("music");
+function play_music(){
+
+    audio = document.getElementById("music");
     audio.play();
-    audio.volume = 0.1;  
-    document.getElementById("playing").textContent = "now playing: canti - human music";
+    audio.volume = 0.1; 
+    
+}
+
+function restart_music(){
+
+    audio = document.getElementById("music");
+    audio.currentTime = 0;
+
 }
