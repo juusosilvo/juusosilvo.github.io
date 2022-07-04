@@ -21,3 +21,11 @@ function restart_music(){
     audio.currentTime = 0;
 
 }
+
+window.onunload = () => {
+
+    audio = document.getElementById("music");
+    audio.pause();
+    audio.currentTime = 0;
+
+};
