@@ -22,10 +22,8 @@ function restart_music(){
 
 }
 
-window.onunload = () => {
-
-    audio = document.getElementById("music");
-    audio.pause();
-    audio.currentTime = 0;
-
-};
+document.addEventListener("visibilitychange", event => {
+    if (document.visibilityState === "hidden") {
+      pause_music();
+    }
+})
