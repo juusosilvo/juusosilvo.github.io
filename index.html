@@ -19,33 +19,19 @@
         <link rel="stylesheet"                 href="./assets/css/global.css">
         <link rel="icon"                       href="./assets/img/favicon2.png" type="image/png" >
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
-
         <title>Juuso.computer | Computer & electronics work | Juuso Silvo</title>
     </head>
 <body onload="play_music();">
     <div id="main">
 
-        <script>
-            VANTA.GLOBE({
-            el: "#main",
-            mouseControls: true,
-            touchControls: true,
-            gyroControls: false,
-            minHeight: 200.00,
-            minWidth: 200.00,
-            scale: 1.00,
-            scaleMobile: 1.00,
-            color: 0x747474,
-            color2: 0xff0000,
-            backgroundColor: 0x0
-            })
-        </script>
+        <video autoplay loop id="myVideo">
+            <source src="video.mp4" type="video/mp4">
+          </video>
 
         <noscript id="ns">&#10071;javascript seems to be off. for the best experience, enable it.&#10071;</noscript>
 
         <div class="heading">
+
 
             <h1>
                 root@juuso<span id="dot">.</span>computer:~$<span id="blink">|</span>
@@ -91,11 +77,7 @@
                     
             </details>
         </div>
-        <span id="bottom">site made by <b>juuso</b>, hosted by <a target="_blank" href="https://github.io">GitHub,</a> and powered by <a target="_blank" href="https://vantajs.com">vanta.js</a></span>
+        <span id="bottom">site made by <b>juuso</b>, hosted by <a target="_blank" href="https://github.io">GitHub and powered by Aphex Twin</span>
     </div>
-
-    <script src="./assets/js/main.js"></script>
-    <audio autoplay="false" id="music" loop="true" src="./assets/atmos.mp3"></audio>
-
 </body>
 </html>
