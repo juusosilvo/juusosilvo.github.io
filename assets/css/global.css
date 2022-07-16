@@ -17,7 +17,7 @@ body{
     -ms-user-select: none; /* Internet Explorer/Edge */
 
     user-select: none; 
-    animation: fadein 2s;
+    animation: fadein 5s;
     margin: 0;
     background-size: cover;
     background-repeat: no-repeat;
@@ -73,27 +73,10 @@ details {
     padding-bottom: 1rem;
     margin-bottom: 0;
   }
-  
-
-#top{
-    position: fixed;
-    top: 0;
-    text-align: center;
-    width: 100vw;
-    font-size: 13px;
-}
 
 #ns{
     position: fixed;
     top: 3%;
-    text-align: center;
-    width: 100vw;
-    font-size: 13px;
-}
-
-#playing{
-    position: fixed;
-    top: 6%;
     text-align: center;
     width: 100vw;
     font-size: 13px;
@@ -117,7 +100,7 @@ p{
 }
 
 audio{
-    display:none;
+    display: none;
     visibility: hidden;
 }
 
@@ -140,8 +123,8 @@ audio{
     display: inline-block;
 }
 
-#particles-js {
-    background-color: rgba(0, 0, 0, 0.744);
+#main {
+    background: rgba(0, 0, 0, 0.527);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
