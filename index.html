@@ -10,29 +10,43 @@
         <meta property="og:title"              content="Juuso Silvo | Juuso.computer | IT freelancer | Programmer" />
         <meta property="og:description"        content="Computer & electronics hobbyist from Finland" />
         <meta property="og:image"              content="./assets/img/favicon2.png" />
-        <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:width" content="431" />
+        <meta property="og:image:type"          content="image/png" />
+        <meta property="og:image:width"         content="431" />
         <meta property="og:image:height" content="471" />
         <meta property="og:image:alt" content="" />
         <meta name="viewport"                  content="width=device-width, initial-scale=1.0">
+
         <link rel="stylesheet"                 href="./assets/css/global.css">
         <link rel="icon"                       href="./assets/img/favicon2.png" type="image/png" >
 
-        <title>Juuso.computer | Computer & electronics work | Juuso Silvo | Tietokone ja elektroniikka harrastaja</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+
+        <title>Juuso.computer | Computer & electronics work | Juuso Silvo</title>
     </head>
-<body onload="random_background();">
-    <div id="particles-js">
+<body onload="play_music();">
+    <div id="main">
 
-        <div id="top">
-            <span class="button" onclick="random_background();">&#10024; change background</span>
-            <span class="button" onclick="play_music();">&#9654; play music</span>
-            <span class="button" onclick="pause_music();">&#9208; pause music</span>
-            <span class="button" onclick="restart_music();">&#9664; restart music</span>
-        </div>
+        <script>
+            VANTA.GLOBE({
+            el: "#main",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x747474,
+            color2: 0xff0000,
+            backgroundColor: 0x0
+            })
+        </script>
 
-        <noscript id="ns">&#10071;javascript seems to be off, random backgrounds and particles disabled&#10071;</noscript>
+        <noscript id="ns">&#10071;javascript seems to be off. for the best experience, enable it.&#10071;</noscript>
 
         <div class="heading">
+
             <h1>
                 root@juuso<span id="dot">.</span>computer:~$<span id="blink">|</span>
             </h1>
@@ -77,15 +91,11 @@
                     
             </details>
         </div>
-        <span id="bottom">site made by <b>juuso</b>, hosted by <a target="_blank" href="https://github.io">GitHub,</a> and powered by <a target="_blank" href="https://vincentgarreau.com/particles.js/">particles.js</a></span>
+        <span id="bottom">site made by <b>juuso</b>, hosted by <a target="_blank" href="https://github.io">GitHub,</a> and powered by <a target="_blank" href="https://vantajs.com">vanta.js</a></span>
     </div>
 
-    <script src="./assets/js/background.js"></script>
-    <script src="./assets/particles/particles.js"></script>
-    <script src="./assets/particles/app.js"></script>
-
-    <script src="./assets/js/audio-volume.js"></script>
-    <audio id="music" loop src="./assets/audio/jazz.mp3" onloadeddata="pause_music();"></audio>
+    <script src="./assets/js/main.js"></script>
+    <audio autoplay="false" id="music" loop="true" src="./assets/audio/atmos.mp3"></audio>
 
 </body>
 </html>
