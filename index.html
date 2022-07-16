@@ -18,10 +18,30 @@
         <link rel="stylesheet"                 href="./assets/css/global.css">
         <link rel="icon"                       href="./assets/img/favicon2.png" type="image/png" >
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+
         <title>Juuso.computer | Computer & electronics work | Juuso Silvo</title>
     </head>
 <body>
     <div id="main">
+
+        <script>
+        VANTA.GLOBE({
+        el: "#main",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        color: 0x909090,
+        color2: 0xff0000,
+        size: 0.70,
+        backgroundColor: 0x0
+        })
+        </script>
 
         <noscript id="ns">&#10071;javascript seems to be off, random backgrounds and particles disabled&#10071;</noscript>
 
@@ -72,7 +92,7 @@
                     
             </details>
         </div>
-        <span id="bottom">site made by <b>juuso</b>, hosted by <a target="_blank" href="https://github.io">GitHub</a> and powered by <b>Aphex Twin</b></span>
+        <span id="bottom">site made by <b>juuso</b>, hosted by <a target="_blank" href="https://github.io">GitHub</a> and powered by <b>vanta.js</b></span>
     </div>
 </body>
 </html>
