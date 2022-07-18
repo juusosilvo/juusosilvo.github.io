@@ -19,11 +19,11 @@ body{
     user-select: none; 
     animation: fadein 5s;
     margin: 0;
-    background: url(https://i.gifer.com/embedded/download/53Dw.gif);
+    background-image: url(https://i.gifer.com/embedded/download/53Dw.gif);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0);
     color: white;
     font-family: "Dina", "tahoma"; 
     overflow: hidden;
@@ -123,6 +123,7 @@ video{
 .heading h1 {
     font-size: 60px;
     margin: 0px;
+
 }
 .heading h3 {
     font-size: 30px;
@@ -134,7 +135,7 @@ video{
 }
 
 #particles-js {
-    background: rgba(0, 0, 0, 0.849);
+    background: rgba(0, 0, 0, 0.8);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
