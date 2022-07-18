@@ -19,6 +19,7 @@ body{
     user-select: none; 
     animation: fadein 5s;
     margin: 0;
+    background: url(https://i.gifer.com/embedded/download/53Dw.gif);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -26,7 +27,7 @@ body{
     color: white;
     font-family: "Dina", "tahoma"; 
     overflow: hidden;
-    cursor: url('../img/cur1054.cur'), default;
+    cursor: url('../img/cursor.cur'), default;
 }
 
 details {
@@ -132,8 +133,8 @@ video{
     display: inline-block;
 }
 
-#main {
-    background: rgba(0, 0, 0, 0.527);
+#particles-js {
+    background: rgba(0, 0, 0, 0.849);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -189,7 +190,7 @@ a:hover{
         width: 390px;
     }
     #particles-js{
-        background-color: rgba(0, 0, 0, 0.637);
+        background-color: rgba(0, 0, 0, 0.779);
     }
     #bottom{
         font-size: 10px;
